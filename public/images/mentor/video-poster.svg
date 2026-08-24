@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" role="img" aria-labelledby="title">
+  <title id="title">Introduction video placeholder</title>
+  <rect width="1280" height="720" fill="#142822"/>
+  <circle cx="640" cy="340" r="64" fill="#C45C26"/>
+  <polygon points="626,310 626,370 678,340" fill="#FAF7F2"/>
+  <text x="640" y="460" text-anchor="middle" fill="#E8DCC8" font-family="Georgia, serif" font-size="32">Introduction coming soon</text>
+</svg>

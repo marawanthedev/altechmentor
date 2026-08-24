@@ -1,26 +1,196 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --canvas: #06080d;
+  --ink: #ffffff;
+  --cedar: #4ecdc4;
+  --copper: #f56437;
+  --sand: #8b919c;
+  --cream: #111317;
+  --cedar-deep: #050506;
+  --ink-soft: rgb(255 255 255 / 0.72);
+  --copper-hover: #ff7a50;
+  --line: rgb(255 255 255 / 0.1);
+  --cyan: #2aa7a1;
+  --fuchsia: #ff7a52;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-canvas: var(--canvas);
+  --color-ink: var(--ink);
+  --color-cedar: var(--cedar);
+  --color-copper: var(--copper);
+  --color-sand: var(--sand);
+  --color-cream: var(--cream);
+  --color-cedar-deep: var(--cedar-deep);
+  --color-ink-soft: var(--ink-soft);
+  --color-copper-hover: var(--copper-hover);
+  --color-line: var(--line);
+  --color-cyan: var(--cyan);
+  --color-fuchsia: var(--fuchsia);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-outfit);
   --font-mono: var(--font-geist-mono);
+  --radius-lg: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
+html[dir="rtl"] {
+  --font-sans: var(--font-cairo);
+  --font-display: var(--font-cairo);
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--copper) 70%, white);
+  color: #06100f;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+.font-display {
+  font-family: var(--font-outfit), var(--font-cairo), ui-sans-serif, system-ui,
+    sans-serif;
+}
+
+:where(h1, h2, h3, h4, h5, h6).font-display {
+  overflow: visible;
+  padding-block: 0.12em;
+  letter-spacing: -0.03em;
+}
+
+html[dir="rtl"] :where(h1, h2, h3, h4, h5, h6).font-display {
+  letter-spacing: 0;
+  line-height: 1.45;
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(255 255 255 / 0.035) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse at center, black 28%, transparent 76%);
+}
+
+.blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(88px);
+  pointer-events: none;
+}
+
+.blob-violet {
+  width: 22rem;
+  height: 22rem;
+  right: -4rem;
+  top: -3rem;
+  background: rgb(42 167 161 / 0.22);
+}
+
+.blob-cyan {
+  width: 24rem;
+  height: 24rem;
+  left: -6rem;
+  bottom: -4rem;
+  background: rgb(245 100 55 / 0.16);
+}
+
+.blob-fuchsia {
+  width: 18rem;
+  height: 18rem;
+  left: 42%;
+  top: 38%;
+  background: rgb(78 205 196 / 0.1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .blob-violet,
+  .blob-cyan,
+  .blob-fuchsia {
+    animation: blob-shift 18s ease-in-out infinite;
+  }
+
+  .blob-cyan {
+    animation-delay: 2s;
+  }
+
+  .blob-fuchsia {
+    animation-delay: 4s;
+  }
+}
+
+@keyframes blob-shift {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(18px, -28px) scale(1.08);
+  }
+  66% {
+    transform: translate(-22px, 14px) scale(0.94);
+  }
+}
+
+.section-rule {
+  height: 2px;
+  width: 2.75rem;
+  border-radius: 9999px;
+  background: var(--cyan);
+}
+
+.surface {
+  border: 1px solid rgb(255 255 255 / 0.08);
+  background: rgb(255 255 255 / 0.035);
+  border-radius: 1rem;
+  backdrop-filter: blur(10px);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .surface:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--cyan) 45%, transparent);
+    box-shadow: 0 24px 48px -32px rgb(42 167 161 / 0.45);
+  }
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 1px solid rgb(255 255 255 / 0.1);
+  background: rgb(255 255 255 / 0.04);
+  padding: 0.4rem 0.85rem;
+  font-size: 0.78rem;
+  color: var(--ink);
 }

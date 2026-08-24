@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AlTechMentor
 
-## Getting Started
+1:1 software engineering mentorship at [altechmentor.com](https://altechmentor.com) — a personal practice with Marwan Mostafa, not a marketplace.
 
-First, run the development server:
+Programs cover junior to mid, mid to senior, technical coaching, and interview preparation. Visitors apply through a Google Form. Review, payment, and scheduling stay manual.
+
+## Stack
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS v4
+- Framer Motion
+
+## Setup
 
 ```bash
+npm install
+cp .env.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Configuration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Replace these before launch:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `APPLICATION_FORM_URL` in `src/config/site.ts`
+- `NEXT_PUBLIC_SITE_URL` in `.env.local` / Vercel (production: `https://altechmentor.com`)
+- Hero video files in `src/config/media.ts`
+- Mentor photos in `public/images/mentor/`
 
-## Learn More
+Brand name and canonical domain live in `src/config/site.ts` (`SITE_NAME`, `SITE_DOMAIN`, `SITE_URL`).
 
-To learn more about Next.js, take a look at the following resources:
+## Location behavior
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Vercel sets `x-vercel-ip-country`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `EG` → Egypt prices + Arabic intro video
+- `MY` → Malaysia prices + English intro video
+- anything else / missing → International prices + English intro video
 
-## Deploy on Vercel
+Locally, set `DEV_COUNTRY=EG` or `DEV_COUNTRY=MY` in `.env.local`. There is no country picker on the site.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Rendering
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `/` and `/pricing` stream location-specific video and prices
+- `/programs`, `/about`, `/resources`, `/book` are static
