@@ -16,7 +16,7 @@ export async function HeroVideo() {
 
   return (
     <figure>
-      <div
+      {/* <div
         className={cn(
           "relative overflow-hidden rounded-3xl border border-white/10 bg-cedar-deep shadow-[0_30px_80px_-36px_rgba(245,100,55,0.35)]",
         )}
@@ -66,7 +66,7 @@ export async function HeroVideo() {
             </div>
           </div>
         )}
-      </div>
+      </div> */}
       <figcaption className="sr-only">{source.caption}</figcaption>
     </figure>
   );
