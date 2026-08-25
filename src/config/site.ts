@@ -4,7 +4,7 @@ export const SITE_DOMAIN = "altechmentor.com";
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? `https://${SITE_DOMAIN}`;
 
-export const APPLICATION_FORM_URL = "https://forms.gle/REPLACE_WITH_YOUR_FORM";
+export const APPLICATION_FORM_URL = "https://forms.gle/yCLM4wXRTh8M7gqWA";
 
 export const SESSION_MINUTES = 45;
 
