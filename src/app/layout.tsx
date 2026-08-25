@@ -62,6 +62,9 @@ export default async function RootLayout({
       dir={meta.dir}
       className={`${inter.variable} ${geistMono.variable} ${outfit.variable} ${cairo.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="icon" href="/favIcon.png" />
+      </head>
       <body className="flex min-h-full flex-col bg-canvas font-sans text-ink">
         <LocaleProvider locale={locale} messages={messages}>
           <JsonLd data={organizationSchema(messages)} />

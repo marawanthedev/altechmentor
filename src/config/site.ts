@@ -36,7 +36,6 @@ export const routes = {
 } as const;
 
 export const navItems = [
-  { href: routes.programs, label: "Programs" },
   { href: routes.pricing, label: "Pricing" },
   { href: routes.about, label: "About" },
   { href: routes.resources, label: "Resources" },

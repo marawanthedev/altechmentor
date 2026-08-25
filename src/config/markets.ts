@@ -44,7 +44,7 @@ export const marketConfig = {
     currency: "EGP",
     locale: "ar-EG",
     video: "arabic",
-    packages: packages([800, 2800, 5200, 7500]),
+    packages: packages([700, 2000, 7000, 8500]),
   },
   MY: {
     key: "malaysia",

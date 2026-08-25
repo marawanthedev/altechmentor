@@ -19,7 +19,7 @@ export async function AudienceSection() {
           <div className="mt-12 grid gap-6 lg:grid-cols-3">
             {audience.paths.map((path) => (
               <article key={path.id} className="surface flex flex-col p-6">
-                <p className="text-[0.65rem] font-medium uppercase tracking-[0.25em] text-copper">
+                <p className="text-[1.3rem] font-medium uppercase tracking-[0.25em] text-copper">
                   {path.label}
                 </p>
                 <h3 className="mt-3 font-display text-2xl font-bold text-ink">

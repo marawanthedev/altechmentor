@@ -7,7 +7,7 @@ import { BenefitsSection } from "@/components/sections/BenefitsSection";
 import { ProcessSection } from "@/components/sections/ProcessSection";
 import { WhyOneOnOneSection } from "@/components/sections/WhyOneOnOneSection";
 import { MentorSection } from "@/components/sections/MentorSection";
-import { SocialProofSection } from "@/components/sections/SocialProofSection";
+// import { SocialProofSection } from "@/components/sections/SocialProofSection";
 import { TechnicalAreasSection } from "@/components/sections/TechnicalAreasSection";
 import { ProgramsTeaser } from "@/components/sections/ProgramsTeaser";
 import { PricingSection } from "@/components/sections/PricingSection";
@@ -32,12 +32,14 @@ export async function generateMetadata() {
     path: "/",
     locale,
     keywords: [
-      "software engineering mentorship",
-      "software engineer mentor",
+      "web development mentorship",
+      "web engineer mentor",
       "React mentorship",
       "Next.js mentorship",
-      "junior software engineer mentor",
-      "mid-level software engineer mentor",
+      "university student web developer mentor",
+      "intern web developer mentor",
+      "junior web developer mentor",
+      "self-taught web developer mentor",
       "منتورشب برمجة",
       "منتور سوفتوير مصر",
     ],
@@ -63,7 +65,7 @@ export default async function HomePage() {
       <ProcessSection />
       <WhyOneOnOneSection />
       <MentorSection />
-      <SocialProofSection />
+      {/* <SocialProofSection /> */}
       <TechnicalAreasSection />
       <ProgramsTeaser />
       <Suspense

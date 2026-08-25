@@ -1,10 +1,10 @@
 import { SITE_NAME } from "@/config/site";
 
 export const heroCopy = {
-  eyebrow: "1:1 software engineering mentorship",
-  title: "Become a stronger software engineer.",
+  eyebrow: "1:1 mentorship for web developers",
+  title: "Become a stronger web engineer.",
   supporting:
-    "Personalized 1:1 mentorship for junior and mid-level developers who want to build stronger technical skills, take more ownership, and accelerate their careers.",
+    "Personalized 1:1 mentorship for web developers — students, interns, juniors, mid-level engineers, and self-taught learners who didn't go to university. Stronger technical skills, more ownership, and faster career growth.",
   primaryCta: "Apply for Mentorship",
   secondaryCta: "See How It Works",
 };
@@ -28,7 +28,7 @@ export const audienceCopy = {
   eyebrow: "Who this is for",
   title: "Three paths. One mentor.",
   intro:
-    "This is personal mentorship for engineers who already write code and want to become more trusted, more independent, and more valuable.",
+    "This is personal mentorship for students, interns, juniors, mid-level web developers, and self-taught learners who already write code and want to become more trusted, more independent, and more valuable.",
   paths: [
     {
       id: "junior-mid",
@@ -53,9 +53,10 @@ export const audienceCopy = {
 
 export const benefitsCopy = {
   eyebrow: "What you get",
-  title: "This is not simply 45 minutes on a video call.",
+  title: "This will be the most worthwhile 45 minutes of your career growth.",
+  accentWord: "45 minutes",
   intro:
-    "Each session is focused work on your code, your decisions, and your next steps. Between sessions, you keep moving with a plan — not another pile of bookmarks.",
+    "Each session is focused work on your code, your decisions, and your next steps. You leave with a plan made for you — not another pile of bookmarks.",
   items: [
     {
       title: "Personalized roadmap",
@@ -123,10 +124,10 @@ export const processCopy = {
 
 export const whyOneOnOneCopy = {
   eyebrow: "Why 1:1",
-  title: "You don't need another course.",
+  title: "Courses are not enough.",
   statement:
-    "You need feedback on your code, your decisions, and your career.",
-  body: "YouTube, Udemy, bootcamps, and generic AI tutors can explain concepts. They cannot sit with your codebase, your team's constraints, or the specific gap between the engineer you are and the engineer you want to become. That is the work of mentorship.",
+    "You need a tailored plan, and a place to ask questions and get answers.",
+  body: "A course is built for everyone. This is built for you. You get a plan for your situation, you ask the questions a syllabus cannot answer, and you get feedback on your actual work — not a recording made for a crowd.",
   contrasts: [
     { against: "YouTube", point: "Infinite content. No one looking at your work." },
     { against: "Courses", point: "A syllabus. Not a plan for your situation." },
@@ -139,7 +140,7 @@ export const technicalAreasCopy = {
   eyebrow: "Technical areas",
   title: "What we can work on together",
   intro:
-    "These are areas I work in professionally. We will only go deep where I can actually help.",
+    "These are the areas I can help you grow in super quickly — with knowledge that comes from real production experience.",
   groups: [
     {
       title: "Frontend",
@@ -150,6 +151,9 @@ export const technicalAreasCopy = {
         "Component architecture",
         "State management",
         "Performance",
+        "Accessibility",
+        "Tailwind CSS",
+        "Error handling",
       ],
     },
     {
@@ -161,6 +165,13 @@ export const technicalAreasCopy = {
         "APIs",
         "Architecture",
         "Production engineering",
+        "E2E testing",
+        "Refactoring",
+        "Code review",
+        "Monorepos",
+        "Node.js",
+        "Express",
+        "Deployment",
       ],
     },
     {
@@ -171,6 +182,20 @@ export const technicalAreasCopy = {
         "Career progression",
         "Junior → Mid",
         "Mid → Senior",
+        "First job",
+        "Self-taught path",
+        "Personal projects",
+      ],
+    },
+    {
+      title: "Product & quality",
+      items: [
+        "Observability",
+        "A/B testing",
+        "Analytics",
+        "Incident response",
+        "Working with Product",
+        "AI-assisted workflows",
       ],
     },
   ],

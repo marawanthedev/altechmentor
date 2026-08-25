@@ -1,8 +1,6 @@
 import { Container } from "@/components/ui/Container";
-import { CTAButton } from "@/components/ui/CTAButton";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SectionReveal } from "@/components/ui/SectionReveal";
-import { routes } from "@/config/site";
 import { getMessages } from "@/i18n/messages";
 
 export async function ProgramsTeaser() {
@@ -31,11 +29,6 @@ export async function ProgramsTeaser() {
                 </p>
               </article>
             ))}
-          </div>
-          <div className="mt-10">
-            <CTAButton href={routes.programs} variant="secondary">
-              {messages.ui.seeAllPrograms}
-            </CTAButton>
           </div>
         </SectionReveal>
       </Container>

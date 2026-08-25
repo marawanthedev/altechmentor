@@ -13,7 +13,7 @@ export async function ProcessSection() {
           <SectionHeading
             eyebrow={process.eyebrow}
             title={process.title}
-            intro={process.intro}
+            // intro={process.intro}
             accentWord={process.accentWord}
           />
           <ol className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

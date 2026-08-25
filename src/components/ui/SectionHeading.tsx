@@ -20,11 +20,13 @@ export function SectionHeading({
   align = "left",
   accentWord,
 }: SectionHeadingProps) {
+  const accentAt = accentWord ? title.lastIndexOf(accentWord) : -1;
   const renderedTitle =
-    accentWord && title.includes(accentWord) ? (
+    accentWord && accentAt >= 0 ? (
       <>
-        {title.slice(0, title.lastIndexOf(accentWord))}
+        {title.slice(0, accentAt)}
         <span className="text-copper">{accentWord}</span>
+        {title.slice(accentAt + accentWord.length)}
       </>
     ) : (
       title

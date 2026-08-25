@@ -1,3 +1,4 @@
+import { visibleFaqs } from "@/content/faq";
 import { mentor } from "@/content/mentor";
 import { programs } from "@/content/programs";
 import {
@@ -63,7 +64,7 @@ export function organizationSchema(messages?: Messages) {
         "@type": "Offer",
         name: program.title,
         description: program.summary,
-        url: `${SITE_URL}/programs`,
+        url: SITE_URL,
       })),
     },
     offers: {
@@ -80,7 +81,7 @@ export function faqSchema(messages: Messages) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: messages.faqs.items.map((item) => ({
+    mainEntity: visibleFaqs(messages.faqs.items).map((item) => ({
       "@type": "Question",
       name: item.question,
       acceptedAnswer: {

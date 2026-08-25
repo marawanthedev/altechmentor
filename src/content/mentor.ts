@@ -66,29 +66,29 @@ export const mentor = {
       company: "Recrave",
       role: "Junior React Engineer",
       period: "April 2022 – February 2023",
-      location: "Penang, Malaysia (remote)",
+      location: "Penang, Malaysia",
       highlights: [
         "Built admin dashboards with search, filtering, CSV import/export, and authentication using React, TypeScript, and Vite.",
       ],
     },
-    {
-      company: "Reasonet",
-      role: "Front-end developer",
-      period: "February 2021 – May 2021",
-      location: "Penang, Malaysia (remote)",
-      highlights: [
-        "Shipped UI work in React and vanilla JavaScript, including dashboards integrated with client backends.",
-      ],
-    },
-    {
-      company: "Sedunia",
-      role: "Front-end developer intern",
-      period: "June 2020 – October 2020",
-      location: "Selangor, Malaysia (remote)",
-      highlights: [
-        "Built UI components in Vue and vanilla JavaScript and integrated them with Laravel APIs.",
-      ],
-    },
+    // {
+    //   company: "Reasonet",
+    //   role: "Front-end developer",
+    //   period: "February 2021 – May 2021",
+    //   location: "Penang, Malaysia (remote)",
+    //   highlights: [
+    //     "Shipped UI work in React and vanilla JavaScript, including dashboards integrated with client backends.",
+    //   ],
+    // },
+    // {
+    //   company: "Sedunia",
+    //   role: "Front-end developer intern",
+    //   period: "June 2020 – October 2020",
+    //   location: "Selangor, Malaysia (remote)",
+    //   highlights: [
+    //     "Built UI components in Vue and vanilla JavaScript and integrated them with Laravel APIs.",
+    //   ],
+    // },
   ],
   links: socials,
 } as const;

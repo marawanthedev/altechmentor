@@ -4,7 +4,6 @@ import { SITE_URL, routes } from "@/config/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     routes.home,
-    routes.programs,
     routes.pricing,
     routes.about,
     routes.resources,

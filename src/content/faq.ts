@@ -2,7 +2,7 @@ export const faqs = [
   {
     question: "Who is this for?",
     answer:
-      "Junior and mid-level software engineers who want to become stronger professional engineers. If you already write code and feel the gap between tutorials and real production work — or between your current level and the next one — this is for you.",
+      "Students, interns, junior and mid-level web developers, and self-taught learners who didn't go to university. If you already write code and feel the gap between tutorials and real production work — or between your current level and the next one — this is for you.",
   },
   {
     question: "How long is each session?",
@@ -17,7 +17,7 @@ export const faqs = [
   {
     question: "Do I need to be a frontend developer?",
     answer:
-      "No. My deepest professional experience is in frontend engineering — React, Next.js, and TypeScript — and production web systems. I also mentor on engineering habits, architecture discussions, and career progression. If your goals sit far outside what I can teach well, I'll tell you.",
+      "This is focused on web developers and web engineers. My deepest professional experience is in frontend — React, Next.js, and TypeScript — and production web systems. I also mentor on engineering habits, architecture, and career progression. If your goals sit far outside web, I'll tell you.",
   },
   {
     question: "Can you review my code?",
@@ -50,3 +50,13 @@ export const faqs = [
       "Yes. Once I understand your goals, we build a personalized roadmap. It is structured, but it is not a one-size-fits-all course syllabus.",
   },
 ] as const;
+
+/** Hidden in the FAQ UI for now — copy stays so it can be restored. */
+export const hiddenFaqQuestions = new Set([
+  "Do you mentor people outside Egypt and Malaysia?",
+  "ينفع لو أنا برّه مصر أو ماليزيا؟",
+]);
+
+export function visibleFaqs<T extends { question: string }>(items: readonly T[]) {
+  return items.filter((item) => !hiddenFaqQuestions.has(item.question));
+}

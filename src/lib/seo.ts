@@ -38,6 +38,9 @@ export function createMetadata({
     publisher: SITE_NAME,
     robots: { index: true, follow: true },
     alternates: { canonical: url },
+    icons: {
+      icon: "/favIcon.png",
+    },
     openGraph: {
       title: fullTitle,
       description,

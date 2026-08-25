@@ -14,6 +14,7 @@ export async function BenefitsSection() {
             eyebrow={benefits.eyebrow}
             title={benefits.title}
             intro={benefits.intro}
+            accentWord={benefits.accentWord}
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2">
             {benefits.items.map((item) => (

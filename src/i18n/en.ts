@@ -48,7 +48,7 @@ export const en = {
   hero: {
     ...heroCopy,
     titleLead: "Become a stronger",
-    titleAccent: "software engineer.",
+    titleAccent: "web engineer.",
   },
   problem: { ...problemCopy, accentWord: "engineer." },
   audience: { ...audienceCopy, accentWord: "mentor." },
@@ -84,9 +84,9 @@ export const en = {
   resources: resourceTopics,
   pages: {
     home: {
-      title: "1:1 Software Engineering Mentorship",
+      title: "1:1 Web Engineering Mentorship",
       description:
-        "AlTechMentor is 1:1 software engineering mentorship with Marwan Mostafa. Junior-to-mid, mid-to-senior, technical coaching, and interview prep for React, TypeScript, and Next.js engineers.",
+        "AlTechMentor is 1:1 mentorship for web developers — students, interns, juniors, mid-level engineers, and self-taught learners. React, TypeScript, and Next.js with Marwan Mostafa.",
     },
     about: {
       title: "About Marwan Mostafa — Software Engineering Mentor",

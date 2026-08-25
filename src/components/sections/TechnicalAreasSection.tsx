@@ -16,7 +16,7 @@ export async function TechnicalAreasSection() {
             intro={technicalAreas.intro}
             accentWord={technicalAreas.accentWord}
           />
-          <div className="mt-12 grid gap-8 md:grid-cols-3">
+          <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {technicalAreas.groups.map((group) => (
               <div key={group.title} className="surface p-6">
                 <h3 className="font-display text-2xl font-bold text-ink">
@@ -24,7 +24,7 @@ export async function TechnicalAreasSection() {
                 </h3>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {group.items.map((item) => (
-                    <span key={item} className="pill">
+                    <span key={item} className="pill text-red">
                       {item}
                     </span>
                   ))}
