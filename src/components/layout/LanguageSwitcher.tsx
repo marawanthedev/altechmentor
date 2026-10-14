@@ -17,7 +17,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "inline-flex rounded-full border border-white/12 bg-white/[0.04] p-0.5 text-[12px] font-medium",
+        "inline-flex rounded-full border border-ink/12 bg-white/60 p-0.5 text-[12px] font-medium",
         className,
       )}
       role="group"
@@ -40,7 +40,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
               "rounded-full px-2.5 py-1 transition-colors",
               active
                 ? "bg-white/12 text-ink"
-                : "text-white/60 hover:text-ink disabled:opacity-50",
+                : "text-ink/60 hover:text-copper disabled:opacity-50",
             )}
             aria-pressed={active}
           >

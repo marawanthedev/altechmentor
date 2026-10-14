@@ -11,10 +11,10 @@ type CTAButtonProps = {
 
 const variants = {
   primary:
-    "bg-copper text-white shadow-[0_16px_40px_-12px_rgba(245,100,55,0.7)] hover:bg-copper-hover",
+    "bg-gold text-cedar-deep shadow-[0_14px_32px_-14px_rgba(138,106,36,0.75)] hover:bg-gold-hover",
   secondary:
-    "border border-white/12 bg-white/[0.04] text-ink backdrop-blur-sm hover:border-white/25 hover:bg-white/[0.07]",
-  inverse: "bg-cyan text-canvas hover:brightness-110",
+    "border border-ink/25 bg-white/50 text-ink hover:border-gold hover:bg-white/80",
+  inverse: "bg-cedar-deep text-white hover:bg-cedar",
 } as const;
 
 export function CTAButton({
@@ -25,7 +25,7 @@ export function CTAButton({
   external,
 }: CTAButtonProps) {
   const classes = cn(
-    "group inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-[15px] font-semibold tracking-tight transition-all duration-200",
+    "group inline-flex items-center justify-center gap-2 rounded-md px-7 py-3.5 text-[15px] font-semibold tracking-tight transition-all duration-200",
     variants[variant],
     className,
   );

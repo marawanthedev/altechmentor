@@ -20,7 +20,7 @@ export async function PricingCards({ market }: PricingCardsProps) {
           className={cn(
             "surface flex flex-col p-6",
             item.recommended &&
-              "border-copper/80 shadow-[0_24px_60px_-28px_rgba(245,100,55,0.55)]",
+              "border-gold shadow-[0_24px_60px_-28px_rgba(138,106,36,0.45)]",
           )}
         >
           {item.recommended ? (

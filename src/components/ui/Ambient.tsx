@@ -13,9 +13,6 @@ export function Ambient({ children, className }: AmbientProps) {
         aria-hidden
       >
         <div className="absolute inset-0 grid-bg" />
-        <div className="blob blob-violet" />
-        <div className="blob blob-cyan" />
-        <div className="blob blob-fuchsia" />
       </div>
       <div className="relative">{children}</div>
     </div>

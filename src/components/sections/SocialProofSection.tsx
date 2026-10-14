@@ -6,7 +6,7 @@ export async function SocialProofSection() {
   const { socialProof } = await getMessages();
 
   return (
-    <section className="bg-cream/40 py-16 sm:py-20">
+    <section className="bg-white/35 py-16 sm:py-20">
       <Container>
         <SectionReveal>
           <div className="mx-auto max-w-2xl text-center">
@@ -24,7 +24,7 @@ export async function SocialProofSection() {
               {socialProof.placeholders.map((label) => (
                 <div
                   key={label}
-                  className="rounded-3xl border border-dashed border-white/15 bg-white/5 px-4 py-8 text-sm text-ink-soft"
+                  className="rounded-lg border border-dashed border-ink/12 bg-white/5 px-4 py-8 text-sm text-ink-soft"
                 >
                   {label} — {socialProof.reserved}
                 </div>

@@ -7,7 +7,7 @@ export async function ProcessSection() {
   const { process } = await getMessages();
 
   return (
-    <section id="how-it-works" className="bg-cream/40 py-20 sm:py-28">
+    <section id="how-it-works" className="bg-white/35 py-20 sm:py-28">
       <Container>
         <SectionReveal>
           <SectionHeading

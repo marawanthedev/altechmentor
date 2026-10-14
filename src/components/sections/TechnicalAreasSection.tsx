@@ -24,7 +24,7 @@ export async function TechnicalAreasSection() {
                 </h3>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {group.items.map((item) => (
-                    <span key={item} className="pill text-red">
+                    <span key={item} className="pill text-ink">
                       {item}
                     </span>
                   ))}
