@@ -511,7 +511,7 @@ export const ar = {
     about: {
       title: "عن مروان مصطفى — منتور لمطورين الويب",
       description:
-        "اعرف أكتر عن مروان مصطفى، Senior Frontend Engineer والمنتور ورا AlTechMentor، بخبرة أكتر من 5 سنين في الـ fintech والـ insurtech.",
+        "اعرف أكتر عن مروان مصطفى، Senior Frontend Engineer والمنتور ورا marwann.tech، بخبرة أكتر من 5 سنين في الـ fintech والـ insurtech.",
       eyebrow: "عني",
       heroTitle: `أنا ${mentorEn.name}. وأنا اللي هشتغل معاك 1:1.`,
       breadcrumb: "عني",
@@ -554,7 +554,7 @@ export const ar = {
     book: {
       title: "قدّم لمنتورشب تطوير ويب 1:1",
       description:
-        "قولّي مستواك، هدفك، وإيه اللي محتاج مساعدة فيه. كل تقديم لـ AlTechMentor بيتراجع شخصيًا قبل ما نبدأ.",
+        "قولّي مستواك، هدفك، وإيه اللي محتاج مساعدة فيه. كل تقديم لـ marwann.tech بيتراجع شخصيًا قبل ما نبدأ.",
       breadcrumb: "قدّم",
     },
 

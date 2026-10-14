@@ -21,7 +21,7 @@ export async function MentorSection() {
       <Container>
         <SectionReveal>
           <div className="grid items-start gap-12 lg:grid-cols-[0.8fr_1.2fr]">
-            <div className="overflow-hidden rounded-3xl border border-white/10 bg-cream">
+            <div className="overflow-hidden rounded-lg border border-ink/12 bg-cream">
               <Image
                 src={mentorImages.portrait.src}
                 alt={mentorImages.portrait.alt}

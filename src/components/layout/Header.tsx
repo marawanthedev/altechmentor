@@ -3,11 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { SITE_NAME, routes } from "@/config/site";
+import { routes } from "@/config/site";
 import { CTAButton } from "@/components/ui/CTAButton";
 import { Container } from "@/components/ui/Container";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { useLocale } from "@/i18n/LocaleProvider";
+import { Logo } from "@/components/ui/Logo";
 import { cn } from "@/lib/cn";
 
 export function Header() {
@@ -16,22 +17,12 @@ export function Header() {
   const { messages } = useLocale();
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/[0.06] bg-[#06080d]/70 backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-ink/10 bg-canvas/80 backdrop-blur-xl">
       <Container className="flex h-[68px] items-center justify-between gap-4">
-        <Link href={routes.home} className="flex items-center gap-2.5 text-ink">
-          <span
-            className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-cyan to-copper text-sm font-bold text-white"
-            aria-hidden
-          >
-            {SITE_NAME.slice(0, 1)}
-          </span>
-          <span className="font-display text-[15px] font-bold tracking-tight">
-            {SITE_NAME}
-          </span>
-        </Link>
+        <Logo />
 
         <nav
-          className="hidden items-center gap-7 text-[13px] font-medium text-white/65 lg:flex"
+          className="hidden items-center gap-7 text-[15px] font-semibold text-ink/70 lg:flex font-display"
           aria-label="Primary"
         >
           {messages.ui.nav.map((item) => (
@@ -39,8 +30,8 @@ export function Header() {
               key={item.href}
               href={item.href}
               className={cn(
-                "transition-colors hover:text-ink",
-                pathname === item.href && "text-ink",
+                "transition-colors hover:text-copper",
+                pathname === item.href && "text-ink underline decoration-gold decoration-2 underline-offset-8",
               )}
             >
               {item.label}
@@ -59,7 +50,7 @@ export function Header() {
           <LanguageSwitcher />
           <button
             type="button"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/12 text-ink"
+            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-ink/20 text-ink"
             aria-expanded={open}
             aria-controls="mobile-nav"
             onClick={() => setOpen((value) => !value)}
@@ -89,7 +80,7 @@ export function Header() {
       {open ? (
         <div
           id="mobile-nav"
-          className="border-t border-white/[0.06] bg-canvas lg:hidden"
+          className="border-t border-ink/10 bg-canvas lg:hidden"
         >
           <Container className="flex flex-col gap-4 py-5">
             {messages.ui.nav.map((item) => (
@@ -97,7 +88,7 @@ export function Header() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="text-base text-ink"
+                className="font-display text-lg font-semibold text-ink hover:text-copper"
               >
                 {item.label}
               </Link>

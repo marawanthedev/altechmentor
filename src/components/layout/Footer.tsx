@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SITE_NAME, routes, socials } from "@/config/site";
+import { Logo } from "@/components/ui/Logo";
 import { Container } from "@/components/ui/Container";
 import { getMessages } from "@/i18n/messages";
 
@@ -13,43 +14,43 @@ export async function Footer() {
   ];
 
   return (
-    <footer className="border-t border-white/10 bg-cedar-deep text-ink">
-      <Container className="grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
+    <footer className="border-t-2 border-gold bg-cedar-deep text-white">
+      <Container className="grid gap-12 py-16 md:grid-cols-[1.4fr_1fr_1fr_auto]">
         <div>
-          <p className="font-display text-2xl font-bold">{SITE_NAME}</p>
-          <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-soft">
+          <Logo tone="light" />
+          <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/70">
             {messages.footer.tagline}
           </p>
         </div>
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold">
             {messages.ui.explore}
           </p>
-          <ul className="mt-4 space-y-2 text-sm text-ink-soft">
+          <ul className="mt-4 space-y-2 text-sm text-white/70">
             {messages.ui.nav.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="hover:text-ink">
+                <Link href={item.href} className="hover:text-gold">
                   {item.label}
                 </Link>
               </li>
             ))}
             <li>
-              <Link href={routes.book} className="hover:text-ink">
+              <Link href={routes.book} className="hover:text-gold">
                 {messages.ui.applyCta}
               </Link>
             </li>
           </ul>
         </div>
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold">
             Marwan
           </p>
-          <ul className="mt-4 space-y-2 text-sm text-ink-soft">
+          <ul className="mt-4 space-y-2 text-sm text-white/70">
             {socialLinks.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="hover:text-ink"
+                  className="hover:text-gold"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -59,9 +60,14 @@ export async function Footer() {
             ))}
           </ul>
         </div>
+        <div className="values-stack text-2xl font-bold text-white" lang="ar" dir="rtl">
+          <span>النمو</span>
+          <span>التوجيه</span>
+          <span>الدقة</span>
+        </div>
       </Container>
       <div className="border-t border-white/10">
-        <Container className="flex flex-col gap-2 py-6 text-xs text-ink-soft sm:flex-row sm:justify-between">
+        <Container className="flex flex-col gap-2 py-6 text-xs text-white/70 sm:flex-row sm:justify-between">
           <p>
             © 2026 {SITE_NAME}. {messages.ui.copyright}
           </p>

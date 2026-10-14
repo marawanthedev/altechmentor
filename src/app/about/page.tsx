@@ -59,7 +59,7 @@ export default async function AboutPage() {
             alt={mentorImages.portrait.alt}
             width={mentorImages.portrait.width}
             height={mentorImages.portrait.height}
-            className="h-auto w-full rounded-3xl border border-white/10 bg-cream object-cover"
+            className="h-auto w-full rounded-lg border border-ink/12 bg-cream object-cover"
           />
           <div>
             {mentor.longBio.map((paragraph) => (

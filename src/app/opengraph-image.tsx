@@ -15,8 +15,8 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
-          background: "#06080d",
-          color: "#fafafa",
+          background: "#eceef1",
+          color: "#14304f",
           padding: "72px",
         }}
       >
@@ -25,7 +25,7 @@ export default function OpenGraphImage() {
             fontSize: 22,
             letterSpacing: "0.22em",
             textTransform: "uppercase",
-            color: "#2aa7a1",
+            color: "#8a6a24",
           }}
         >
           {SITE_NAME}
@@ -34,7 +34,7 @@ export default function OpenGraphImage() {
           <div style={{ fontSize: 64, lineHeight: 1.08, maxWidth: 920, fontWeight: 700 }}>
             1:1 software engineering mentorship.
           </div>
-          <div style={{ fontSize: 26, color: "#a1a1aa", maxWidth: 720 }}>
+          <div style={{ fontSize: 26, color: "#5d6b7c", maxWidth: 720 }}>
             Junior to mid, mid to senior, technical coaching, and interview prep with Marwan Mostafa.
           </div>
         </div>

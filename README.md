@@ -1,6 +1,6 @@
-# AlTechMentor
+# marwann.tech
 
-1:1 software engineering mentorship at [altechmentor.com](https://altechmentor.com) — a personal practice with Marwan Mostafa, not a marketplace.
+1:1 software engineering mentorship at [marwann.tech](https://marwann.tech) — a personal practice with Marwan Mostafa, not a marketplace.
 
 Programs cover junior to mid, mid to senior, technical coaching, and interview preparation. Visitors apply through a Google Form. Review, payment, and scheduling stay manual.
 
@@ -24,7 +24,7 @@ npm run dev
 Replace these before launch:
 
 - `APPLICATION_FORM_URL` in `src/config/site.ts`
-- `NEXT_PUBLIC_SITE_URL` in `.env.local` / Vercel (production: `https://altechmentor.com`)
+- `NEXT_PUBLIC_SITE_URL` in `.env.local` / Vercel (production: `https://marwann.tech`)
 - Hero video files in `src/config/media.ts`
 - Mentor photos in `public/images/mentor/`
 

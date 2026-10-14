@@ -9,15 +9,15 @@ export async function FinalCtaSection() {
   const { finalCta } = await getMessages();
 
   return (
-    <Ambient className="border-t border-white/10">
+    <Ambient className="border-t border-ink/12">
       <section className="py-20 sm:py-28">
         <Container>
           <SectionReveal>
             <div className="mx-auto max-w-2xl text-center">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-cyan">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-copper">
                 {finalCta.eyebrow}
               </p>
-              <h2 className="mt-3 font-display text-3xl font-extrabold leading-[1.15] tracking-tight text-ink sm:text-4xl">
+              <h2 className="mt-3 font-display text-3xl font-bold leading-[1.15] tracking-tight text-ink sm:text-4xl">
                 {finalCta.title}
               </h2>
               <div className="section-rule mx-auto mt-4" aria-hidden />

@@ -7,7 +7,7 @@ export async function AudienceSection() {
   const { audience } = await getMessages();
 
   return (
-    <section className="bg-cream/40 py-20 sm:py-28">
+    <section className="bg-white/35 py-20 sm:py-28">
       <Container>
         <SectionReveal>
           <SectionHeading

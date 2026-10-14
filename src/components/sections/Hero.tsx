@@ -20,7 +20,7 @@ export function Hero({ video }: HeroProps) {
   const hero = messages.hero;
 
   return (
-    <Ambient className="border-b border-white/[0.06]">
+    <Ambient className="border-b border-ink/10">
       <Container className="grid items-center gap-12 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16 lg:py-24">
         <div className="max-w-xl">
           <motion.div
@@ -31,7 +31,7 @@ export function Hero({ video }: HeroProps) {
             <Eyebrow variant="badge">{hero.eyebrow}</Eyebrow>
           </motion.div>
           <motion.h1
-            className="mt-5 font-display text-4xl font-extrabold leading-[1.18] tracking-tight text-ink sm:text-5xl lg:text-[3.6rem]"
+            className="mt-5 font-display text-4xl font-bold leading-[1.18] tracking-tight text-ink sm:text-5xl lg:text-[3.6rem]"
             initial={initial}
             animate={animate}
             transition={{ duration: 0.55, delay: reduceMotion ? 0 : 0.08 }}

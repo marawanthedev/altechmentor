@@ -8,14 +8,14 @@ export async function WhyOneOnOneSection() {
   const { whyOneOnOne } = await getMessages();
 
   return (
-    <Ambient className="border-y border-white/10">
+    <Ambient className="border-y border-ink/12">
       <section className="py-20 text-ink sm:py-28">
         <Container>
           <SectionReveal>
             <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
               <div>
                 <Eyebrow>{whyOneOnOne.eyebrow}</Eyebrow>
-                <h2 className="mt-3 font-display text-3xl font-extrabold leading-[1.15] tracking-tight sm:text-4xl">
+                <h2 className="mt-3 font-display text-3xl font-bold leading-[1.15] tracking-tight sm:text-4xl">
                   {whyOneOnOne.title}
                 </h2>
                 <div className="section-rule mt-4" aria-hidden />

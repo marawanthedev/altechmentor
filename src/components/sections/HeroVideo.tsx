@@ -6,7 +6,7 @@ import { cn } from "@/lib/cn";
 
 export function HeroVideoFallback() {
   return (
-    <div className="aspect-video w-full rounded-3xl bg-cream" aria-hidden />
+    <div className="aspect-video w-full rounded-lg bg-cream" aria-hidden />
   );
 }
 
@@ -18,7 +18,7 @@ export async function HeroVideo() {
     <figure>
       {/* <div
         className={cn(
-          "relative overflow-hidden rounded-3xl border border-white/10 bg-cedar-deep shadow-[0_30px_80px_-36px_rgba(245,100,55,0.35)]",
+          "relative overflow-hidden rounded-lg border border-ink/12 bg-cedar-deep shadow-[0_30px_80px_-36px_rgba(245,100,55,0.35)]",
         )}
       >
         {source.src ? (
@@ -47,7 +47,7 @@ export async function HeroVideo() {
                 alt={mentorImages.portrait.alt}
                 width={112}
                 height={112}
-                className="h-20 w-20 shrink-0 rounded-full border border-white/20 object-cover object-[center_18%] sm:h-28 sm:w-28"
+                className="h-20 w-20 shrink-0 rounded-full border border-ink/12 object-cover object-[center_18%] sm:h-28 sm:w-28"
               />
               <div className="min-w-0">
                 <p className="text-[0.65rem] font-medium uppercase tracking-[0.2em] text-cyan">

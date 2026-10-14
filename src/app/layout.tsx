@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cairo, Geist_Mono, Inter, Outfit } from "next/font/google";
+import { Cairo, Cormorant_Garamond, Geist_Mono, Inter } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { SkipLink } from "@/components/layout/SkipLink";
@@ -24,9 +24,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const serif = Cormorant_Garamond({
+  variable: "--font-serif",
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
   display: "swap",
 });
 
@@ -60,7 +61,7 @@ export default async function RootLayout({
     <html
       lang={meta.htmlLang}
       dir={meta.dir}
-      className={`${inter.variable} ${geistMono.variable} ${outfit.variable} ${cairo.variable} h-full antialiased`}
+      className={`${inter.variable} ${geistMono.variable} ${serif.variable} ${cairo.variable} h-full antialiased`}
     >
       <head>
         <link rel="icon" href="/favIcon.png" />
