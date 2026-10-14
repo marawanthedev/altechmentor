@@ -86,12 +86,12 @@ export const en = {
     home: {
       title: "1:1 Web Engineering Mentorship",
       description:
-        "AlTechMentor is 1:1 mentorship for web developers — students, interns, juniors, mid-level engineers, and self-taught learners. React, TypeScript, and Next.js with Marwan Mostafa.",
+        "marwann.tech is 1:1 mentorship for web developers — students, interns, juniors, mid-level engineers, and self-taught learners. React, TypeScript, and Next.js with Marwan Mostafa.",
     },
     about: {
       title: "About Marwan Mostafa — Software Engineering Mentor",
       description:
-        "Meet Marwan Mostafa, the mentor behind AlTechMentor. Senior Frontend Engineer with 5+ years in fintech and insurtech. 1:1 mentorship for junior and mid-level software engineers.",
+        "Meet Marwan Mostafa, the mentor behind marwann.tech. Senior Frontend Engineer with 5+ years in fintech and insurtech. 1:1 mentorship for junior and mid-level software engineers.",
       eyebrow: "About",
       heroTitle: `I’m ${mentor.name}. I’ll be the person on the other side of the call.`,
       breadcrumb: "About",
@@ -99,7 +99,7 @@ export const en = {
     programs: {
       title: "Mentorship Programs: Junior to Mid, Mid to Senior & Interview Prep",
       description:
-        "AlTechMentor programs: junior to mid, mid to senior, focused technical coaching, and interview preparation — 1:1 software engineering mentorship with Marwan Mostafa.",
+        "marwann.tech programs: junior to mid, mid to senior, focused technical coaching, and interview preparation — 1:1 software engineering mentorship with Marwan Mostafa.",
       eyebrow: "Programs",
       heroTitle: "Mentorship shaped around your work, not a syllabus.",
       intro:
@@ -109,7 +109,7 @@ export const en = {
     pricing: {
       title: "1:1 Mentorship Pricing",
       description:
-        "AlTechMentor pricing for 45-minute 1:1 software engineering mentorship. Packages of 1, 4, 8, and 12 sessions in EGP, MYR, or USD by market.",
+        "marwann.tech pricing for 45-minute 1:1 software engineering mentorship. Packages of 1, 4, 8, and 12 sessions in EGP, MYR, or USD by market.",
       eyebrow: "Pricing",
       heroTitle: "45-minute 1:1 sessions, priced for your market.",
       intro:
@@ -119,7 +119,7 @@ export const en = {
     resources: {
       title: "Resources for Software Engineers",
       description:
-        "AlTechMentor guides on software engineering mentorship, junior-to-mid growth, React and Next.js, and engineering career coaching. Writing is on the way.",
+        "marwann.tech guides on software engineering mentorship, junior-to-mid growth, React and Next.js, and engineering career coaching. Writing is on the way.",
       eyebrow: "Resources",
       heroTitle: "Writing that will earn its place here.",
       intro:
@@ -129,7 +129,7 @@ export const en = {
     book: {
       title: "Apply for 1:1 Software Mentorship",
       description:
-        "Apply to AlTechMentor. Tell Marwan Mostafa where you are, where you want to go, and what you’re struggling with. Applications are reviewed personally — this is not instant booking.",
+        "Apply to marwann.tech. Tell Marwan Mostafa where you are, where you want to go, and what you’re struggling with. Applications are reviewed personally — this is not instant booking.",
       breadcrumb: "Apply",
     },
     notFound: {

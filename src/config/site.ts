@@ -1,5 +1,5 @@
-export const SITE_NAME = "AlTechMentor";
-export const SITE_DOMAIN = "altechmentor.com";
+export const SITE_NAME = "marwann.tech";
+export const SITE_DOMAIN = "marwann.tech";
 
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? `https://${SITE_DOMAIN}`;
@@ -9,11 +9,11 @@ export const APPLICATION_FORM_URL = "https://forms.gle/yCLM4wXRTh8M7gqWA";
 export const SESSION_MINUTES = 45;
 
 export const defaultDescription =
-  "AlTechMentor offers 1:1 software engineering mentorship with Marwan Mostafa — junior-to-mid, mid-to-senior, technical coaching, and interview prep for React, TypeScript, and Next.js engineers.";
+  "marwann.tech offers 1:1 software engineering mentorship with Marwan Mostafa — junior-to-mid, mid-to-senior, technical coaching, and interview prep for React, TypeScript, and Next.js engineers.";
 
 export const defaultKeywords = [
-  "AlTechMentor",
-  "altechmentor.com",
+  "marwann.tech",
+  "marwann.tech",
   "1:1 software engineering mentorship",
   "software engineer mentor",
   "junior to mid level engineer",

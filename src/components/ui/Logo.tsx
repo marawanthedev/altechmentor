@@ -21,7 +21,7 @@ export function Logo({ className, tone = "dark" }: LogoProps) {
         className,
       )}
     >
-      <span className="font-display text-xl font-bold uppercase tracking-[0.14em]">
+      <span className="font-display text-xl font-bold tracking-[0.02em]">
         {SITE_NAME}
       </span>
       <span
